@@ -1,0 +1,26 @@
+.homePage{
+    display: flex;
+    height: 100%;
+
+    .textContainer{
+        flex: 3;
+
+        .padding{
+            padding-right: 100px;
+        }
+    }
+
+    .imgContainer{
+        flex:2;
+        background-color: #d2f3f3;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 80%;
+            position: absolute;
+            right: 0;
+        }
+    }
+}

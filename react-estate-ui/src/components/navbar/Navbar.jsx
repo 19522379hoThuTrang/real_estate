@@ -8,17 +8,17 @@ export default function Navbar() {
         <div className="left">
             <a href="/" className="logo">
                 <img src="/logo.png" alt="" />
-                <span>Real State</span>
+                <span>BẤT ĐỘNG SẢN</span>
             </a>
-            <a href="/">Home</a>
-            <a href="/">About</a>
-            <a href="/">Contact</a>
-            <a href="/">Agents</a>
+            <a href="/">Trang chủ</a>
+            <a href="/">Liên hệ</a>
+            <a href="/">Đại lý</a>
+            <a href="/">Tin tức</a>
         </div>
         <div className="right">
-            <a href="/">Sign in</a>
+            <a href="/">Đăng nhập</a>
             <a href="/" className="register">
-            Sign up
+                Đăng ký
             </a>
             <div className="menuIcon">
                 <img 
@@ -28,12 +28,12 @@ export default function Navbar() {
                 />
             </div>
             <div className={open ? "menu active" : "menu"}>
-                <a href="/">Home</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
-                <a href="/">Agents</a>
-                <a href="/">Sign in</a>
-                <a href="/">Sign up</a>
+                <a href="/">Trang chủ</a>
+                <a href="/">Liên hệ</a>
+                <a href="/">Đại lý</a>
+                <a href="/">Tin tức</a>
+                <a href="/">Đăng nhập</a>
+                <a href="/">Đăng ký</a>
             </div>
         </div>
     </nav>
