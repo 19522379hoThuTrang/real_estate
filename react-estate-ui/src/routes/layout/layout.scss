@@ -1,4 +1,4 @@
-@import "./responsive.scss";
+@import "../../responsive.scss";
 
 .layout{
     height: 100vh;
@@ -11,12 +11,12 @@
     flex-direction: column;
 
     @include tabletScreen{
-        background-color: #d2f3f3;
+        // background-color: #d2f3f3;
         max-width: 780px;
     }
 
     @include phoneScreen{
-        background-color: rgb(248, 207, 245);
+        // background-color: rgb(248, 207, 245);
         max-width: 440px;
     }
 
