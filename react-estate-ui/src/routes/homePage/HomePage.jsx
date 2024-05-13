@@ -14,8 +14,8 @@ export default function HomePage() {
             Chúng tôi cung cấp dữ liệu tin rao lớn với đa dạng loại hình bất động sản giúp 
             bạn có những lựa chọn phù hợp với nhu cầu của mình.
             </p>
-            <SearchBar/>
           </div>
+        <SearchBar/>
         </div>
 
         <div className="imgContainer">

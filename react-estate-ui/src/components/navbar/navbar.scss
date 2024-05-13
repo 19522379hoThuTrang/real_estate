@@ -11,6 +11,9 @@ nav{
         @include phoneScreen{
             display: none;
         }
+        @include tabletScreen{
+            font-size: 13px;
+        }
 
         &:hover{
             scale: 1.05;
@@ -97,7 +100,7 @@ nav{
             justify-content: center;
             font-size: 24px;
 
-            &.active{
+            &.hoatDong{
                 right: 0;
             }
 

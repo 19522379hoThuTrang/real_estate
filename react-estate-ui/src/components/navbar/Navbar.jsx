@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./navbar.scss";
 
 export default function Navbar() {
-    const [open,setOpen] = useState(false)
+    const [Mo,setMo] = useState(false)
   return (
     <nav>
         <div className="left">
@@ -24,10 +24,10 @@ export default function Navbar() {
                 <img 
                     src="/menu.png" 
                     alt="" 
-                    onClick={() => setOpen((prev) => !prev)}
+                    onClick={() => setMo((prev) => !prev)}
                 />
             </div>
-            <div className={open ? "menu active" : "menu"}>
+            <div className={Mo ? "menu hoatDong" : "menu"}>
                 <a href="/">Trang chủ</a>
                 <a href="/">Liên hệ</a>
                 <a href="/">Đại lý</a>

@@ -11,12 +11,12 @@
     flex-direction: column;
 
     @include tabletScreen{
-        background-color: green;
+        background-color: #d2f3f3;
         max-width: 780px;
     }
 
     @include phoneScreen{
-        background-color: red;
+        background-color: rgb(248, 207, 245);
         max-width: 440px;
     }
 

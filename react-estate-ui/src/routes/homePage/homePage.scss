@@ -1,13 +1,13 @@
+@import "../../responsive.scss";
 .homePage{
     display: flex;
     height: 100%;
-
+    
     .textContainer{
         flex: 3;
-
-        .padding{
-            padding-right: 100px;
-        }
+    }
+    .padding{
+        margin-bottom: 20px;
     }
 
     .imgContainer{
@@ -16,6 +16,11 @@
         position: relative;
         display: flex;
         align-items: center;
+
+        @include tabletScreen{
+            display: none;
+        }
+
 
         img{
             width: 80%;

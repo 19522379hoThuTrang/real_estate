@@ -1,0 +1,84 @@
+@import "../../responsive.scss";
+.searchBar{
+        button{
+            padding: 16px 36px;
+            border: 1px solid #999;
+            border-bottom:none;
+            cursor: pointer;
+            background-color: white;
+            text-transform: capitalize;
+
+            &.hoatDong{
+                background-color: black;
+                color: white;
+            }
+
+            &:first-child{
+                border-top-left-radius:5px;
+                border-right:none;
+
+            }
+            &:last-child{
+                border-top-right-radius:5px;
+                border-left:none;
+            }
+        }
+
+    form{
+        border: 1px solid #999;
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        gap: 5px;
+        margin-right: 100px;
+
+        @include tabletScreen{
+            margin-right: 150px;
+        }
+
+        @include phoneScreen{
+            margin-right: 0;
+            flex-direction: column;
+            border: none;
+        }
+
+        input{
+            border: none;
+            padding: 0px 10px;
+            width: 140px;
+
+            @include tabletScreen{
+                padding: 0px 5px;
+
+                &:nth-child(2),&:nth-child(3){
+                    width: 140px;
+                }
+            }
+            @include phoneScreen{
+                width: auto;
+                &:nth-child(2),
+                &:nth-child(3){
+                    width: auto;
+                }
+                padding: 20px;
+                border: 1px solid #999;
+            }
+        }
+
+        button{
+            border: none;
+            cursor: pointer;
+            background-color: #fece51;
+            flex: 1;
+
+            @include phoneScreen{
+                padding: 15px;
+            }
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+}
+}
