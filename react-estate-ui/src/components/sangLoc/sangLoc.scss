@@ -1,0 +1,72 @@
+.sangLoc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  h1 {
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  .dacDiem {
+    display: flex;
+    flex-direction: column;
+    gap: 2;
+
+    label {
+      font-size: 10px;
+    }
+
+    input,select{
+      padding: 10px;
+      border: 1px solid #e0e0e0;
+      border-radius: 14px;
+    }
+  }
+
+  .top {
+    input {
+      width: 100%;
+    }
+  }
+  .media {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    select{
+        width: 75px;
+    }
+
+    .loaiNhaDat{
+        width: 214px;
+    }
+
+    input{
+        width: 143px;
+    }  
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    input{
+        width: 246px;
+    }
+
+    button{
+        width: 100px;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #fece51;
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }  
+  }
+}

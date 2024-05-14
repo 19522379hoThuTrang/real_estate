@@ -1,3 +1,15 @@
 .danhSachPage{
     display: flex;
+    height: 100%;
+    .khungDanhSach{
+        flex: 3;
+
+        .wrapper{
+            padding-right: 50px;
+        }
+    }
+    .khungMap{
+        flex: 2;
+        background-color: antiquewhite;
+    }
 }

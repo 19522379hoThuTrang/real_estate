@@ -1,46 +1,46 @@
 import { useState } from "react";
 import "./searchBar.scss";
 
-const nhieuLoai = ["mua","thuê"]
+const nhieuMucDich = ["mua","thuê"]
 
 export default function SearchBar() {
   const [query, setQuery] = useState({
-    type:"mua",
-    viTri:"",
-    giaToiThieu:0,
-    giaToiDa:0,
+    mucDich:"mua",
+    tinhThanh:"",
+    giaThapNhat:0,
+    giaCaoNhat:0,
   });
 
-  const switchLoai = (val) => {
-    setQuery((prev) => ({...prev, loai:val}));
+  const switchMucDich = (val) => {
+    setQuery((prev) => ({...prev, mucDich:val}));
   };
 
   return (
     <div className="searchBar">
-          {nhieuLoai.map((loai) => (
+          {nhieuMucDich.map((mucDich) => (
               <button 
-                key={loai} 
-                onClick={()=>switchLoai(loai)}
-                className={query.loai === loai ? "hoatDong" : ""}
+                key={mucDich} 
+                onClick={()=>switchMucDich(mucDich)}
+                className={query.mucDich === mucDich ? "hoatDong" : ""}
               >
-                {loai}
+                {mucDich}
               </button>
             ))}
             <form>
-              <input type="text" name ="viTri" placeholder="vị trí thành phố"/>
+              <input type="text" name ="tinhThanh" placeholder="vị trí tỉnh thành"/>
               <input
                 type="number"
-                name="giaToiThieu"
+                name="giaThapNhat"
                 min={0}
-                max={1000000000000000}
-                placeholder="giá tối thiểu"
+                max={99999999999999}
+                placeholder="giá thấp nhất"
               />
               <input
                 type="number"
-                name="giaToiDa"
+                name="giaCaoNhat"
                 min={0}
-                max={1000000000000000}
-                placeholder="giá tối đa"
+                max={99999999999999}
+                placeholder="Giá cao nhất"
               />
               <button>
                 <img src="/search.png" alt=""/>

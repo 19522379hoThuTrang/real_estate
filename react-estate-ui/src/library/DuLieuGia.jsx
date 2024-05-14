@@ -1,4 +1,4 @@
-export const danhSachPage = [
+export const DanhSachdata = [
     {
       id: 1,
       title: "A Great Apartment Next to the Beach!",
