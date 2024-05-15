@@ -4,7 +4,7 @@ import "./homePage.scss";
 export default function HomePage() {
   return (
     <div className="homePage">
-        <div className="textContainer">
+        <div className="chuaText">
           <div className="padding">
             <h1 className="tieuDe">
               Tìm kiếm, mua bán, cho thuê nhà đất toàn quốc trên website BẤT ĐỘNG SẢN
@@ -18,7 +18,7 @@ export default function HomePage() {
         <SearchBar/>
         </div>
 
-        <div className="imgContainer">
+        <div className="chuaImg">
             <img src="/bg.png" alt=""/>
         </div>
     </div>

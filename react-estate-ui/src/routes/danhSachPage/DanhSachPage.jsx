@@ -7,15 +7,15 @@ export default function DanhSachPage() {
     const data = DanhSachdata;
   return (
     <div className="danhSachPage">
-        <div className="khungDanhSach">
+        <div className="chuaDanhSach">
           <div className="padding">
             <SangLoc/>
-            {data.map(muc=>(
-              <Card key={muc.id} muc={muc}/>
+            {data.map(dacDiem=>(
+              <Card key={dacDiem.id} dacDiem={dacDiem}/>
             ))}
           </div>
         </div>
-        <div className="khungMap">map</div>
+        <div className="chuaMap">map</div>
     </div>
   )
 }
