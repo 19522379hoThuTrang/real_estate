@@ -9,9 +9,8 @@ export default function Chot({muc}) {
           <div className='chuaCuaSoBat'>
             <img src={muc.img} alt=''/>
             <div className='chuaText'>
-              <Link to={`/{muc.id} vnđ`}>{muc.tieuDe}</Link>
-              <b>{muc.gia}</b>
-              <b>{muc.dienTich}</b>
+              <Link to={`/${muc.id}`}>{muc.tieuDe}</Link>
+              <b>{muc.gia} vnđ</b>
             </div>
           </div>
         </Popup>
