@@ -1,22 +1,22 @@
 import "./card.scss"
 import { Link } from "react-router-dom"
 
-export default function Card({dacDiem}) {
+export default function Card({muc}) {
   return (
     <div className="card">
-      <Link to={`/$dacDiem.id`} className="chuaImg">
-        <img src={dacDiem.img} alt=""/>
+      <Link to={`/$muc.id`} className="chuaImg">
+        <img src={muc.img} alt=""/>
       </Link>
       <div className="chuaText">
         <h2 className="tieuDe">
-          <Link to={`/${dacDiem.id}`}>{dacDiem.title}</Link>
+          <Link to={`/{muc.id}`}>{muc.tieuDe}</Link>
         </h2>
         <p className="diaChi">
           <img src="/pin.png" alt=""/>
-          <span>{dacDiem.address}</span>
+          <span>{muc.diaChi}</span>
         </p>
-        <p className="gia">${dacDiem.price}</p>
-        {/* <p className="dienTich">${dacDiem.dienTich}</p> */}
+        <p className="gia">{muc.gia} vnđ</p>
+        {/* <p className="dienTich">${muc.dienTich}</p> */}
          <div className="icons">
           <div className="icon">
             <img src="/save.png" alt=""/>

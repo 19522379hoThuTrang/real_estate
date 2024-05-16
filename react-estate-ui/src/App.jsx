@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./routes/layout/Layout";
-import chiTietNhaDatPage from "./routes/chiTietSanPham/ChiTietNhaDatPage";
+import ChiTietNhaDatPage from "./routes/chiTietSanPham/ChiTietNhaDatPage";
 
 function App() {
   const router =createBrowserRouter([
@@ -24,7 +24,7 @@ function App() {
           },
           {
             path:"/:id",
-            element:<chiTietNhaDatPage/>
+            element:<ChiTietNhaDatPage/>
           }
         ]
     }

@@ -1,6 +1,6 @@
 import "./chiTietNhaDatPage.scss";
 
-export default function chiTietNhaDatPage() {
+export default function ChiTietNhaDatPage() {
   return (
     <div>ChiTietSanPham</div>
   )

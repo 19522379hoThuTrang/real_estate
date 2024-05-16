@@ -2,34 +2,44 @@ export const DanhSachdata = [
     {
       id: 1,
       // tieude
-      title: "A Great Apartment Next to the Beach!", 
+      tieude: "A Great Apartment Next to the Beach!", 
       img: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      price: 1000,
-      address: "456 Park Avenue, London",
-      latitude: 51.5074,
-      longitude: -0.1278,
+      //gia
+      gia: 1000,
+      //diaChi
+      diaChi: "456 Park Avenue, London",
+      //vido
+      viDo: 10.664510659704007, 
+      //kinh do
+      kinhDo: 106.85539409127118,
     },
     {
-      id: 2,
-      title: "An Awesome Apartment Near the Park! Almost too good to be true!",
-      img: "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bedroom: 3,
-      bathroom: 2,
-      price: 1500,
-      address: "789 Oxford Street, London",
-      latitude: 52.4862,
-      longitude: -1.8904,
+      id: 1,
+      // tieude
+      tieude: "A Great Apartment Next to the Beach!", 
+      img: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      //gia
+      gia: 1000,
+      //diaChi
+      diaChi: "456 Park Avenue, London",
+      //vido
+      viDo: 10.635071719803518,
+      //kinh do
+      kinhDo: 106.83513804921589,
     },
     {
-      id: 3,
-      title: "A New Apartment in the City!",
-      img: "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      bedroom: 1,
-      bathroom: 1,
-      price: 800,
-      address: "101 Baker Street, London",
-      latitude: 53.4808,
-      longitude: -2.2426,
+      id: 1,
+      // tieude
+      tieude: "A Great Apartment Next to the Beach!", 
+      img: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      //gia
+      gia: 1000,
+      //diaChi
+      diaChi: "456 Park Avenue, London",
+      //vido
+      viDo: 51.5074,
+      //kinh do
+      kinhDo: -0.1278,
     },
     {
       id: 4,
@@ -39,8 +49,8 @@ export const DanhSachdata = [
       bathroom: 1,
       price: 1000,
       address: "234 Kingsway, London,",
-      latitude: 53.8008,
-      longitude: -1.5491,
+      viDo: 53.8008,
+      kinhDo: -1.5491,
     },
     {
       id: 5,
@@ -50,8 +60,8 @@ export const DanhSachdata = [
       bathroom: 2,
       price: 1500,
       address: "567 Victoria Road, London",
-      latitude: 53.4084,
-      longitude: -2.9916,
+      viDo: 53.4084,
+      kinhDo: -2.9916,
     },
     {
       id: 6,
@@ -61,8 +71,8 @@ export const DanhSachdata = [
       bathroom: 1,
       price: 800,
       address: "890 Regent Street, London",
-      latitude: 54.9783,
-      longitude: -1.6174,
+      viDo: 54.9783,
+      kinhDo: -1.6174,
     },
     {
       id: 7,
@@ -72,8 +82,8 @@ export const DanhSachdata = [
       bathroom: 1,
       price: 1000,
       address: "112 Piccadilly, London",
-      latitude: 53.3811,
-      longitude: -1.4701,
+      viDo: 53.3811,
+      kinhDo: -1.4701,
     },
     {
       id: 8,
@@ -83,8 +93,8 @@ export const DanhSachdata = [
       bathroom: 2,
       price: 1500,
       address: "8765 Main High Street, London",
-      latitude: 51.4545,
-      longitude: -2.5879,
+      viDo: 51.4545,
+      kinhDo: -2.5879,
     },
   ];
   
@@ -101,8 +111,8 @@ export const DanhSachdata = [
     bedRooms: 2,
     bathroom: 1,
     size: 861,
-    latitude: 51.5074,
-    longitude: -0.1278,
+    viDo: 51.5074,
+    kinhDo: -0.1278,
     city: "London",
     address: "1234 Broadway St",
     school: "250m away",
