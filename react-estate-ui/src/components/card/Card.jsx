@@ -5,7 +5,7 @@ export default function Card({muc}) {
   return (
     <div className="card">
       <Link to={`/$muc.id`} className="chuaImg">
-        <img src={muc.img} alt=""/>
+        <img src={muc.image} alt=""/>
       </Link>
       <div className="chuaText">
         <h2 className="tieuDe">
