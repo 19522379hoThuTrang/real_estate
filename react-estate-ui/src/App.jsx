@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Layout from "./routes/layout/Layout";
 import ChiTietNhaDatPage from "./routes/chiTietSanPham/ChiTietNhaDatPage";
+import HoSoPage from "./routes/hoSo/HoSoPage";
 
 function App() {
   const router =createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
           {
             path:"/:id",
             element:<ChiTietNhaDatPage/>
+          },
+          {
+            path:"/hoSo",
+            element:<HoSoPage/>
           }
         ]
     }

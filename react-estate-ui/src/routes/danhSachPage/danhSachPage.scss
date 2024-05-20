@@ -1,17 +1,17 @@
 .danhSachPage {
   display: flex;
-  //
+  
   height: 100%;
   .chuaDanhSach {
     flex: 3;
-    //
+    
     height: 100%;
     .padding {
       display: flex;
       flex-direction: column;
       gap: 50px;
-      overflow-y: scroll;
       //
+      overflow-y: scroll;
       height: 100%;
       padding-bottom: 50px;
     }

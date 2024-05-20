@@ -14,7 +14,7 @@ export const DanhSachdata = [
       kinhDo: 106.85539409127118,
     },
     {
-      id: 1,
+      id: 2,
       // tieuDe
       tieuDe: "A Great Apartment Next to the Beach!", 
       image: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -28,7 +28,7 @@ export const DanhSachdata = [
       kinhDo: 106.83513804921589,
     },
     {
-      id: 1,
+      id: 3,
       // tieuDe
       tieuDe: "A Great Apartment Next to the Beach!", 
       image: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -100,27 +100,27 @@ export const DanhSachdata = [
   
   export const chiTietSanPhamData = {
     id: 1,
-    tieuDe: "Beautiful Apartment",
-    gia: 1200,
+    tieuDe: "Nhà chính chủ HXH 200/x Nguyễn Trọng Tuyển, Phú Nhuận 4,8 x 12,5 (60m2) vuông vức giá chỉ 4tỷ090",
+    gia: 4090000000,
     images: [
       "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "https://images.pexels.com/photos/2467285/pexels-photo-2467285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     ],
-    dienTich: 861,
-    viDo: 51.5074,
-    kinhDo: -0.1278,
-    tinhThanh: "London",
-    diaChi: "1234 Broadway St",
-    truong: "250m away",
-    busStation: "100m away",
-    nhaHang: "50m away",
-    moTa:"Future alike hill pull picture swim magic chain seed engineer nest outer raise bound easy poetry gain loud weigh me recognize farmer bare danger. actually put square leg vessels earth engine matter key cup indeed body film century shut place environment were stage vertical roof bottom lady function breeze darkness beside tin view local breathe carbon swam declared magnet escape has from pile apart route coffee storm someone hold space use ahead sheep jungle closely natural attached part top grain your grade trade corn salmon trouble new bend most teacher range anybody every seat fifteen eventually",
+    dienTich: 60,
+    viDo: 10.798126318619046, 
+    kinhDo: 106.67347785360742,
+    tinhThanh: "Hồ Chí Minh",
+    diaChi: "200/x Nguyễn Trọng Tuyển, Phường 8, Phú Nhuận.",
+    truong: "250m",
+    busStation: "100m",
+    nhaHang: "50m",
+    moTa:"Giá chỉ: 4 tỷ 090. 200/x Nguyễn Trọng Tuyển, Phường 8, Phú Nhuận. Diện tích: 4,8x12,5m (60m²). Kết cấu: 1 trệt 2 lầu, phòng khách, bếp, 3PN khép kín, sân thượng, full nội thất, công năng tốt cho gia đình đông người. Nhà đẹp lung linh, khách chỉ dọn vào ở ngay. Hẻm trước nhà 4m, xe hơi đỗ cửa vài bước chân ra mặt tiền đường lớn, ở, cho thuê hay kinh doanh đều phù hợp. Khu vực xung quanh nhà cao tầng, dân trí tốt, an ninh, tuyệt đối. Vị trí siêu đỉnh, vài bước chân ra mặt tiền đường lớn, gần công viên Hoàng Văn Thụ, bệnh viện đa khoa, khu kinh doanh sầm uất. Sổ hồng riêng chính chủ, hoàn công đủ, công chứng ngay. Cam kết thông tin chính xác 100%. Thuận sẵn sàng nhận cuộc gọi 24/24. Nhà chính chủ miễn tiếp cò, môi giới.",
   };
   
   export const userData = {
     id: 1,
-    hoTen: "John Doe",
+    hoTen: "Trần Thanh Tuyền",
     image: "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   };

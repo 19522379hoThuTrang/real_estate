@@ -66,6 +66,41 @@ nav{
             margin: 20px;
         }
 
+        .user{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+
+            .hoSo{
+                padding: 12px 24px;
+                background-color: #fece51;
+                cursor: pointer;
+                border: none;
+
+                .thongBao{
+                    position: absolute;
+                    top: 8px;
+                    right: 138px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    width: 26px;
+                    height: 26px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
         .register{
             background-color: #fece51;
         }
