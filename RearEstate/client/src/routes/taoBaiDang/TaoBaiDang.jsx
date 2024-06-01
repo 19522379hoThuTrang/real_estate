@@ -132,10 +132,6 @@ export default function TaoBaiDang() {
               <label htmlFor="benhVien">Bệnh viện</label>
               <input min={0} id="benhVien" name="benhVien" type="number" />
             </div>
-            <div className="item">
-              <label htmlFor="congVien">Công viên</label>
-              <input min={0} id="congVien" name="congVien" type="number" />
-            </div>
               <button className="sendButton">Add</button>
             {error && <span>error</span>}
           </form>

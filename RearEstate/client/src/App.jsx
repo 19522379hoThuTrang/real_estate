@@ -12,7 +12,7 @@ import DangKyPage from "./routes/dangKy/DangKyPage";
 import Login from "./routes/login/Login";
 import CapNhatHoSo from "./routes/capNhapHoSo/CapNhatHoSo";
 import TaoBaiDang from "./routes/taoBaiDang/TaoBaiDang";
-// import { singlePageLoader,listPageLoader,profilePageLoader } from "./library/loaders";
+import { chiTietNhaDatPageLoader} from "./library/loaders";
 
 function App() {
   const router =createBrowserRouter([
@@ -31,7 +31,7 @@ function App() {
           {
             path:"/:id",
             element:<ChiTietNhaDatPage/>,
-            // loader:singlePageLoader,
+            loader:chiTietNhaDatPageLoader,
           },
           {
             path: "/login",
@@ -50,7 +50,6 @@ function App() {
         {
           path: "/hoSo",
           element: <HoSoPage />,
-          // loader: singlePageLoader
         },
         {
           path: "/hoSo/capNhat",

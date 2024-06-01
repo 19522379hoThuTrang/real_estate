@@ -31,7 +31,7 @@ model post {
 }
 
 enum mucDich {
-  mua
+  ban
   thue
 }
 
@@ -61,7 +61,6 @@ model PostDetail {
   truongHoc  Int?
   sieuThi    Int?
   benhVien   Int?
-  congVien   Int?
   Post       post    @relation(fields: [postId], references: [id])
   postId     String  @unique @db.ObjectId
 }
