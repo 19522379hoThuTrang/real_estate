@@ -7,10 +7,10 @@ export default function Chot({muc}) {
     <Marker position={[muc.viDo, muc.kinhDo]}>
         <Popup>
           <div className='chuaCuaSoBat'>
-            <img src={muc.image} alt=''/>
+            <img src={muc.images[0]} alt=''/>
             <div className='chuaText'>
               <Link to={`/${muc.id}`}>{muc.tieuDe}</Link>
-              <b>{muc.gia} vnđ</b>
+              <b>{muc.gia} triệu vnđ</b>
             </div>
           </div>
         </Popup>

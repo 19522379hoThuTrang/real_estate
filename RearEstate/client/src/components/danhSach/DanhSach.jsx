@@ -1,11 +1,10 @@
 import './danhSach.scss'
 import Card from "../card/Card"
-import {DanhSachdata} from "../../library/DuLieuGia"
 
-export default function DanhSach() {
+export default function DanhSach({posts}) {
   return (
     <div className='danhSach'>
-        {DanhSachdata.map(muc=>(
+        {posts.map(muc=>(
               <Card key={muc.id} muc={muc}/>
         ))}
     </div>

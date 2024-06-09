@@ -1,154 +1,157 @@
-.chiTietSanPhamPage{
-    display: flex;
+.chiTietSanPhamPage {
+  display: flex;
+  height: 100%;
+
+  .chiTiet {
     height: 100%;
-    
-    .chiTiet{
-        height: 100%;
-        overflow-y: scroll;
-        flex: 3;
+    overflow-y: scroll;
+    flex: 3;
 
-        .padding{
-            padding-right: 50px;
+    .padding {
+      padding-right: 50px;
 
-            .info{
-                margin-top: 50px;
-                .top{
-                    display: flex;
-                    justify-content: space-between;
+      .info {
+        margin-top: 50px;
+        .top {
+          display: flex;
+          justify-content: space-between;
 
-                    .baiDang{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        h1{
-                            font-weight: 400;
-                        }
-                        .diaChi{
-                            display: flex;
-                            gap: 5px;
-                            align-items: center;
-                            color: #888;
-                            font-size: 14px;
-
-                            img{
-                                width: 16px;
-                                height: 16px;
-                            }
-                        }
-                        .gia{
-                            padding: 5px;
-                            background-color: rgba(254,205,81,0.438);
-                            border-radius: 5px;
-                            width: max-content;
-                            font-size: 20px;
-                            font-weight: 300;
-                        }
-                    }
-                    .user{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 20px;
-                        padding: 0px 50px;
-                        border-radius: 10px;
-                        background-color: rgba(254,205,81,0.209);
-                        font-weight: 600;
-                        img{
-                            width: 50px;
-                            height: 50px;
-                            border-radius: 50%;
-                            object-fit: cover;
-                        }
-                    }
-                }
-                .bottom{
-                    margin-top: 50px;
-                    color: #555;
-                    line-height: 20px;
-                }
-            }
-        }
-    }
-    .nhungDacDiem{
-        flex: 2;
-        background-color: #d2f3f3;
-        .padding{
-            padding: 0px 20px;
+          .baiDang {
             display: flex;
             flex-direction: column;
             gap: 20px;
-
-            img{
-                width: 24px;
-                height: 24px;
+            h1 {
+              font-weight: 400;
             }
+            .diaChi {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              color: #888;
+              font-size: 14px;
 
-            .tieuDe{
-                font-weight: bold;
-                font-size: 18px;
-                margin-bottom: 10px;
+              img {
+                width: 16px;
+                height: 16px;
+              }
             }
-
-            .dacDiem{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-
-                img{
-                    background-color: rgba(254,205,81,0.209);
-                }
-                .dacDiemText{
-                    span{
-                        font-weight: bold;
-                    }
-                    p{
-                        font-size: 14px;
-                    }
-                }
+            .gia {
+              padding: 5px;
+              background-color: rgba(254, 205, 81, 0.438);
+              border-radius: 5px;
+              width: max-content;
+              font-size: 20px;
+              font-weight: 300;
             }
-
-            .danhSachDoc{
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                padding: 20px 10px;
-                background-color: white;
-                border-radius: 10px;
+          }
+          .user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 0px 50px;
+            border-radius: 10px;
+            background-color: rgba(254, 205, 81, 0.209);
+            font-weight: 600;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
             }
-            
-            .danhSachNgang{
-                justify-content: space-between;
-                display: flex;
-                padding: 20px 10px;
-                background-color: white;
-                border-radius: 10px;
-            }
-            .chuaMap{
-                width: 100%;
-                height: 200px;
-            }
-
-            .buttons{
-                display: flex;
-                justify-content: space-between;
-
-                button{
-                    padding: 20px;
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    background-color: white;
-                    border: #fece51 solid 1px;
-                    border-radius: 5px;
-                    cursor: pointer;
-
-                    img{
-                        width: 16px;
-                        height: 16px;
-                    }
-                }
-            }
+          }
         }
+        .bottom {
+          margin-top: 50px;
+          color: #555;
+          line-height: 20px;
+        }
+      }
     }
+  }
+  .nhungDacDiem {
+    flex: 2;
+    background-color: #d2f3f3;
+    overflow-y: scroll;
+    height: 100%;
+    .padding {
+      padding: 0px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .tieuDe {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .dacDiem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          background-color: rgba(254, 205, 81, 0.209);
+        }
+        .dacDiemText {
+          span {
+            font-weight: bold;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .danhSachDoc {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .danhSachNgang {
+        justify-content: space-between;
+        display: flex;
+        padding: 20px 10px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      .chuaMap {
+        width: 100%;
+        height: 200px;
+        z-index: 1;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          background-color: white;
+          border: #fece51 solid 1px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
 }

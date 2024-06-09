@@ -1,16 +1,14 @@
 import DanhSach from "../../components/danhSach/DanhSach";
 import "./hoSoPage.scss";
 import Chat from "../../components/chat/Chat";
-import { Link, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { Await, Link, useLoaderData, useNavigate } from "react-router-dom";
+import { Suspense, useContext } from "react";
 import apiRequest from "../../library/apiRequest";
 import { AuthContext } from "../../context/AuthContext";
 
 export default function HoSoPage() {
-  // const data = useLoaderData();
-
+  const data = useLoaderData();
   const { updateUser, currentUser } = useContext(AuthContext);
-
   const navigate = useNavigate();
 
   const handleLogout = async () => {
@@ -47,15 +45,34 @@ export default function HoSoPage() {
             <button onClick={handleLogout}>Đăng xuất</button>
           </div>
           <div className="tieuDe">
-            <h1>Những bất động sản đã đăng</h1>
+            <h1>Những bất động sản của bạn</h1>
             <Link to="/dangBai">
               <button>Tạo bài đăng mới</button>
             </Link>
           </div>
-          <DanhSach />
+          <Suspense fallback={<p>Vui lòng đợi trong giây lát...</p>}>
+            <Await
+              resolve={data.postResponse}
+              errorElement={<p>Lỗi tải dữ liệu</p>}
+            >
+              {(postResponse) => (
+                <DanhSach posts={postResponse.data.userPosts} />
+              )}
+            </Await>
+          </Suspense>
           <div className="tieuDe">
-            <h1>Đã lưu danh sách</h1>
+            <h1>Những bất động sản bạn đã lưu</h1>
           </div>
+          <Suspense fallback={<p>Vui lòng chờ trong giây lát...</p>}>
+            <Await
+              resolve={data.postResponse}
+              errorElement={<p>Lỗi tải dữ liệu</p>}
+            >
+              {(postResponse) => (
+                <DanhSach posts={postResponse.data.savedPosts} />
+              )}
+            </Await>
+          </Suspense>
         </div>
       </div>
       <div className="chuaChat">

@@ -19,7 +19,8 @@ model post {
   gia         Int
   images      String[]
   diaChi      String
-  tinhThanh   String
+  tinhThanh   tinhThanh
+  dienTich    Int?
   kinhDo      String
   viDo        String
   mucDich     mucDich
@@ -28,6 +29,73 @@ model post {
   user        User        @relation(fields: [userId], references: [id])
   userId      String      @db.ObjectId
   postDetail  PostDetail?
+  savedPosts SavedPost[]
+}
+
+enum tinhThanh{
+  HaGiang
+  TuyenQuang
+  CaoBang
+  LangSon
+  BacGiang
+  QuangNinh
+  BacKan
+  ThaiNguyen
+  PhuTho
+  HoaBinh
+  SonLa
+  DienBien
+  LaiChau
+  LaoCai
+  YenBai
+  HaNoi
+  BacNinh
+  HaNam
+  HaiDuong
+  HaiPhong
+  HungYen
+  NamDinh
+  ThaiBinh
+  VinhPhuc
+  NinhBinh
+  ThanhHoa
+  NgheAn
+  HaTinh
+  QuangBinh
+  QuangTri
+  ThuaThienHue
+  DaNang
+  QuangNam
+  QuangNgai
+  BinhDinh
+  PhuYen
+  KhanhHoa
+  NinhThuan
+  BinhThuan
+  KonTum
+  GiaLai
+  DakLak
+  DakNong
+  LamDong
+  HoChiMinh
+  BaRiaVungTau
+  BinhDuong
+  BinhPhuoc
+  DongNai
+  TayNinh
+  AnGiang
+  CaMau
+  BacLieu
+  SocTrang
+  TienGiang
+  KienGiang
+  BenTre
+  LongAn
+  DongThap
+  CanTho
+  TraVinh
+  VinhLong
+  PhuQuoc
 }
 
 enum mucDich {
@@ -55,9 +123,7 @@ enum noiThat {
 model PostDetail {
   id         String  @id @default(auto()) @map("_id") @db.ObjectId
   moTa       String
-  mucDich    String?
   noiThat    noiThat
-  dienTich   Int?
   truongHoc  Int?
   sieuThi    Int?
   benhVien   Int?
@@ -65,13 +131,45 @@ model PostDetail {
   postId     String  @unique @db.ObjectId
 }
 
+model SavedPost {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  user      User     @relation(fields: [userId], references: [id])
+  Post      post     @relation(fields: [postId], references: [id])
+  userId    String   @unique @db.ObjectId
+  postId    String   @unique @db.ObjectId
+  createdAt DateTime @default(now())
+
+  @@unique([userId, postId])
+}
+
 model User {
   id         String      @id @default(auto()) @map("_id") @db.ObjectId
-  email      String      @unique
-  username   String      @unique
-  password   String
+  email      String      @unique  @require
+  username   String      @unique  @require
+  password   String      @require
   avatar     String?
   createdAt  DateTime    @default(now())
   Posts      post[]
+  savedPosts SavedPost[]
+  chats      Chat[]      @relation(fields: [chatIDs], references: [id])
+  chatIDs    String[]    @db.ObjectId
 }
 
+model Chat {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  users     User[]    @relation(fields: [userIDs], references: [id])
+  userIDs   String[]  @db.ObjectId
+  createdAt DateTime  @default(now())
+  seenBy    String[]  @db.ObjectId
+  messages  Message[]
+  lastMessage String?
+}
+
+model Message {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  text      String
+  userId    String
+  chat      Chat     @relation(fields: [chatId], references: [id])
+  chatId    String   @db.ObjectId
+  createdAt DateTime @default(now())
+}

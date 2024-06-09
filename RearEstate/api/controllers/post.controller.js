@@ -3,7 +3,6 @@ import jwt from "jsonwebtoken";
 
 export const getPosts = async (req, res) => {
   const query = req.query;
-
   try {
     const posts = await prisma.post.findMany({
       where: {
@@ -11,8 +10,12 @@ export const getPosts = async (req, res) => {
         mucDich: query.mucDich || undefined,
         loaiNhaDat: query.loaiNhaDat || undefined,
         gia: {
-          gte: parseInt(query.giaMin) || undefined,
-          lte: parseInt(query.giaMax) || undefined,
+          gte: parseInt(query.giaMin) || 0,
+          lte: parseInt(query.giaMax) || 100000,
+        },
+        dienTich: {
+          gte: parseInt(query.dienTichMin) || 0,
+          lte: parseInt(query.dienTichMax) || 90000,
         },
       },
     });
@@ -59,7 +62,6 @@ export const getPost = async (req, res) => {
         }
       });
     }
-    res.status(200).json({ ...post, isSaved: false });
   } catch (err) {
     console.log(err);
     res.status(500).json({ message: "Failed to get post" });

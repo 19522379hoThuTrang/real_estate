@@ -30,7 +30,7 @@
         justify-content: space-between;
         height: 64px;
         gap: 5px;
-        margin-right: 100px;
+        margin-right: -2px;
 
         @include tabletScreen{
             margin-right: 150px;
@@ -42,10 +42,10 @@
             border: none;
         }
 
-        input{
+        input, select{
             border: none;
             padding: 0px 10px;
-            width: 140px;
+            width: 175px;
 
             @include tabletScreen{
                 padding: 0px 5px;
